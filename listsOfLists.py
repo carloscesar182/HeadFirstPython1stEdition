@@ -7,8 +7,12 @@ for each_item in movies:  # Processing the movies list
     if isinstance(each_item, list):  # To check if the current item is a list
         for nested_item in each_item:  # If it is a list, use another 'for' loop to process the nested list
             if isinstance(nested_item, list):  # It will check inside of your first list if have another ones
-                for deeper_item in nested_item:
-                    print(deeper_item)
+                for deeper_item in nested_item:  # It is going to make you crazy!!!
+                    if isinstance(deeper_item, list):
+                        for deepest_item in deeper_item:
+                            print(deepest_item)
+                    else:
+                        print(deeper_item)
             else:
                 print(nested_item)  # If the current item of the enclosing list isn´t a list, display it on screen
     else:
