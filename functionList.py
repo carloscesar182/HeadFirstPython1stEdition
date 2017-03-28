@@ -6,4 +6,7 @@ movies = ["The Holy Grail", 1975, "Terry Jones & Terry Gilliam", 91,
 
 cast = ["Palin", "Cleese", "Idle", "Jones", "Gilliam", "Chapman"]
 
-nester.print_lol(movies, 0)  # Invoke the function 'print_lol' inside the 'nester.py' module
+names = ["John", "Eric", ["Cleese", "Idle"], "Michael", ["Palin"]]
+
+nester.print_lol(movies, 0)  # Invoke the function 'print_lol' inside the 'nester.py' module giving the second argument
+nester.print_lol(names)  # Invoke the function 'print_lol' inside the 'nester.py' module without the second argument

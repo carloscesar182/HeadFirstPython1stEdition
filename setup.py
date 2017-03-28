@@ -5,7 +5,7 @@ from distutils.core import setup
 On the right side, your module´s metadata with de setup function´s arguments."""
 setup(
     name='nester',
-    version='1.0.0',
+    version='1.2.0',
     py_modules=['nester'],
     author='carloscesar182',
     author_email='carloscesar182@gmail.com',
